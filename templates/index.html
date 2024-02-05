@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Accessibility Processor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'dist/css/output.css') }}" />
+  </head>
+  <body>
+    <div class="container max-w-lg px-12 mt-12">
+      <h1 class="text-2xl mb-6">Procesador de Tablas HTML Accesibles</h1>
+      <form action="/" method="post" enctype="multipart/form-data" class="bg-white shadow-md rounded-md p-5">
+        <label for="html_file">Archivo DOCX:</label>
+        <input type="file" id="html_file" name="html_file" required class="w-full border-2 border-gray-300 p-2 rounded-md" />
+        <br /><br />
+        <label for="caption_text">Caption:</label>
+        <input type="text" id="caption_text" name="caption_text" required class="w-full border-2 border-gray-300 p-2 rounded-md" />
+        <br /><br />
+        <input type="submit" value="Procesar" class="bg-blue-500 text-white w-full p-2 rounded-md" />
+      </form>
+    </div>
+  </body>
+</html>
